@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top" >
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:contentDescription="@string/pick_time"
+        android:cropToPadding="true"
+        android:paddingRight="2dp"
+        android:src="@drawable/cldn" />
+     
+
+    <EditText
+        android:id="@+id/date1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton1"
+        android:layout_toLeftOf="@+id/imageButton1"
+        android:ems="10"
+        android:inputType="none" />
+
+    <EditText
+        android:id="@+id/date2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toLeftOf="@+id/imageButton1"
+        android:ems="10"
+        android:inputType="none" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/date2"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:background="@null"
+        android:contentDescription="@string/pick_time"
+        android:cropToPadding="true"
+        android:paddingRight="2dp"
+        android:src="@drawable/cldn" />
+
+    <RadioGroup
+        android:id="@+id/radioc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+     <RadioButton
+         android:id="@+id/radioButton1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignRight="@+id/radioButton3"
+         android:layout_alignTop="@+id/radioc"
+         android:onClick="onRadioButtonClicked"
+         android:text="View Expenses"/>
+
+     <RadioButton
+         android:id="@+id/radioButton2"
+         android:layout_width="139dp"
+         android:layout_height="wrap_content"
+         android:onClick="onRadioButtonClicked"
+         android:text="View Income" />
+
+       <RadioButton
+           android:id="@+id/radioButton3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:onClick="onRadioButtonClicked"
+           android:text="Check Balance" />
+       
+    </RadioGroup>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignRight="@+id/imageButton2"
+            android:layout_below="@+id/radioc"
+            android:layout_marginTop="26dp"
+            android:background="#87c540"
+            android:onClick="onRadioButtonClicked"
+            android:text="Button"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="40dp"
+            android:layout_toLeftOf="@+id/textView3"
+            android:text="To Date"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toLeftOf="@+id/date2"
+            android:text=":"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/date1"
+            android:layout_alignLeft="@+id/textView2"
+            android:text="From Date"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_alignLeft="@+id/textView3"
+            android:text=":"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+</RelativeLayout>

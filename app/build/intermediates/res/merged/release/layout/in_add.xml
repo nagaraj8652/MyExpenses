@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/scrollView1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" >
+	
+<RelativeLayout
+    android:layout_width="match_parent"
+
+    android:layout_height="468dp" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="24dp"
+        android:text="Amount"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_below="@+id/Amount"
+        android:layout_marginTop="24dp"
+        android:text="Method"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_toLeftOf="@+id/imageButton1"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/Amount"
+        android:layout_toLeftOf="@+id/imageButton1" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton1"
+        android:layout_alignLeft="@+id/EditText01"
+        android:ems="10"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="28dp"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignRight="@+id/spinner1"
+        android:layout_below="@+id/textView5"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:contentDescription="@string/pick_time"
+        android:cropToPadding="true"
+        android:paddingRight="2dp"
+        android:src="@drawable/cldn" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="42dp"
+        android:layout_toLeftOf="@+id/imageButton1"
+        android:background="#87c540"
+        android:text="Save"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toLeftOf="@+id/spinner1"
+        android:layout_toRightOf="@+id/textView2"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignRight="@+id/textView8"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText01"
+        android:layout_alignLeft="@+id/textView9"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="Income Type "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toLeftOf="@+id/imageButton1"
+        android:ems="10"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/textView7"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/textView6"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+</ScrollView><!-- From: file:/E:/MyExpenses/app/src/main/res/layout/in_add.xml -->

@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item
+      android:id="@+id/Today"
+      android:orderInCategory="100"
+      android:title="@string/today"/>
+   
+   <item
+      android:id="@+id/Current_Week"
+      android:orderInCategory="100"
+      android:title="@string/week"/>
+   
+   <item
+      android:id="@+id/Current_Month"
+      android:orderInCategory="100"
+      android:title="@string/month"/>
+   
+   <item
+      android:id="@+id/Current_Year"
+      android:orderInCategory="100"
+      android:title="@string/year"/>
+   
+    <item
+      android:id="@+id/all"
+      android:orderInCategory="100"
+      android:title="@string/all"/>
+
+</menu>

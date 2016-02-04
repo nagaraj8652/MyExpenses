@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myexpenses"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.myexpenses.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.myexpenses.Ex_view"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.Ex_add"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.Ex_info"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.In_add"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.In_view"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.All_view"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.MyExpandableListAdapter"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.Item"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.ListViewMainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.SMSListAdapter"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.ItemAdapter"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.Selectoption"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.About_us"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.myexpenses.Expand"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

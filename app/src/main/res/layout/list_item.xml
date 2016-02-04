@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" 
+    android:layout_weight="0.38">
+    <!-- Item Name -->
+     
+       <TextView
+           android:id="@+id/toptextdata"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:paddingLeft="2dp"
+           android:text="TextView"
+           android:textColor="#87c540"
+           android:textSize="18dp"
+           android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/middletextdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="2dp"
+            android:text="TextView"
+            android:textColor="#87c540"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/bottomtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/toptextdata"
+            android:layout_below="@+id/toptextdata"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="12dp" />
+
+</RelativeLayout>

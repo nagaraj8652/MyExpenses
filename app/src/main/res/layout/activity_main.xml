@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/add_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="28dp"
+        android:background="#87c540"
+        android:text="Add Income"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/aboutus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_income"
+        android:layout_alignRight="@+id/add_income"
+        android:layout_below="@+id/add_income"
+        android:layout_marginTop="26dp"
+        android:background="#87c540"
+        android:onClick="showTimePickerDialog"
+        android:text="@string/aboutus"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="25dp"
+        android:background="#87c540"
+        android:text="@string/add_expenses"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:background="#87c540"
+        android:text="@string/view"
+        android:textColor="#fff" />
+
+</RelativeLayout>
